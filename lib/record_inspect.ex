@@ -17,6 +17,8 @@ defmodule RecordInspect do
         %{}
     end
 
+    def inspect({}, _opts), do: "{}"
+
     def inspect(tuple, opts) do
       record_name = elem(tuple, 0)
 

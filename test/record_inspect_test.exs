@@ -11,6 +11,8 @@ defmodule RecordInspectTest do
   end
 
   test "inspect with no match" do
+    assert inspect({}) == ~s|{}|
+    assert inspect({:person}) == ~s|{:person}|
     assert inspect({:person, "foo"}) == ~s|{:person, "foo"}|
   end
 end
