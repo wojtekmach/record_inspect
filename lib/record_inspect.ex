@@ -1,0 +1,2 @@
+defmodule RecordInspect do
+end
